@@ -4045,6 +4045,7 @@ __metadata:
     react: "npm:^17.0.0"
     react-dom: "npm:^17.0.0"
     react-use: "npm:^17.2.4"
+    typescript: "npm:~4.6.4"
   peerDependencies:
     react: ^16.13.1 || ^17.0.0
   languageName: unknown
@@ -17114,6 +17115,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:~4.6.4":
+  version: 4.6.4
+  resolution: "typescript@npm:4.6.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 92e2c0328485a4f7bd7435f5b105f03addff32f867e241dc3be8c372ed801a138c732d9a55697696d2f82a80dd6ad4bddff1ad6b0d1884bf4a24b92e71094c44
+  languageName: node
+  linkType: hard
+
 "typescript@npm:~5.1.0":
   version: 5.1.6
   resolution: "typescript@npm:5.1.6"
@@ -17121,6 +17132,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 45ac28e2df8365fd28dac42f5d62edfe69a7203d5ec646732cadc04065331f34f9078f81f150fde42ed9754eed6fa3b06a8f3523c40b821e557b727f1992e025
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A~4.6.4#optional!builtin<compat/typescript>":
+  version: 4.6.4
+  resolution: "typescript@patch:typescript@npm%3A4.6.4#optional!builtin<compat/typescript>::version=4.6.4&hash=5d3a66"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 0e3fa814d454942a689daf4c00f82328d323e7ecd4077e3265d45375e64642611631f4c882a71be87774468ba03793e9b8ff4bccfac3018194a9e36d8f72c251
   languageName: node
   linkType: hard
 

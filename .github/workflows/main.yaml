@@ -28,7 +28,9 @@ jobs:
             yarn-${{ runner.OS }}-18-
 
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: |
+          yarn set version berry
+          yarn install --immutable
 
       - name: Run Tests
         run: yarn test:all
