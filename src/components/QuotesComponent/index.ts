@@ -1,0 +1,1 @@
+export { DevQuote } from './DevQuotes';
