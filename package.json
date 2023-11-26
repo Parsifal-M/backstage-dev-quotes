@@ -21,7 +21,6 @@
   },
   "sideEffects": false,
   "scripts": {
-    "prettier:check": "prettier --check .",
     "tsc": "tsc",
     "test:all": "backstage-cli repo test --coverage",
     "lint:all": "backstage-cli repo lint",
@@ -32,6 +31,8 @@
     "clean": "backstage-cli package clean",
     "prepack": "backstage-cli package prepack && pinst --disable",
     "postpack": "backstage-cli package postpack && pinst --enable",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -68,10 +69,10 @@
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
       "eslint --fix",
       "tsc --noEmit",
-      "prettier --write ."
+      "prettier --check ."
     ],
     "*.{json,md}": [
-      "prettier --write ."
+      "prettier --check ."
     ]
   },
   "files": [
