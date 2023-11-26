@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '18.x'
 
+      - name: Set Yarn Version
+        run: yarn set version berry
+
       - name: Clean Yarn Cache
         run: yarn cache clean
 
@@ -28,9 +31,7 @@ jobs:
             yarn-${{ runner.OS }}-18-
 
       - name: Install Dependencies
-        run: |
-          yarn set version berry
-          yarn install --immutable
+        run: yarn install --immutable
 
       - name: Run Tests
         run: yarn test:all
