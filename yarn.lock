@@ -4039,9 +4039,11 @@ __metadata:
     "@material-ui/core": "npm:^4.12.2"
     "@material-ui/icons": "npm:^4.9.1"
     "@material-ui/lab": "npm:4.0.0-alpha.61"
+    "@spotify/prettier-config": "npm:^12.0.0"
     "@testing-library/jest-dom": "npm:^5.10.1"
     "@testing-library/react": "npm:^12.1.3"
     "@testing-library/user-event": "npm:^14.0.0"
+    husky: "npm:^8.0.3"
     react: "npm:^17.0.0"
     react-dom: "npm:^17.0.0"
     react-use: "npm:^17.2.4"
@@ -4301,6 +4303,15 @@ __metadata:
     "@typescript-eslint/parser": ">=5"
     eslint: ">=8.x"
   checksum: afea90e129f8a90c448b1e98add4554b0370d9b7ea4e46cf5b48975061d8ad9d92b531765c69aa0495befcb3688789edb29601de81a79ae9420b708b1abe6ea1
+  languageName: node
+  linkType: hard
+
+"@spotify/prettier-config@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "@spotify/prettier-config@npm:12.0.0"
+  peerDependencies:
+    prettier: 2.x
+  checksum: c19ea09a0c6937dc08917a5890a01c800450ed8f20f614ec2239e09a5897a7d40eb28e5af70ae58c7f41d56769c0fc516ab0ae672d2fd7585016cd54ad514336
   languageName: node
   linkType: hard
 
@@ -10307,6 +10318,15 @@ __metadata:
   version: 2.1.0
   resolution: "human-signals@npm:2.1.0"
   checksum: 695edb3edfcfe9c8b52a76926cd31b36978782062c0ed9b1192b36bebc75c4c87c82e178dfcb0ed0fc27ca59d434198aac0bd0be18f5781ded775604db22304a
+  languageName: node
+  linkType: hard
+
+"husky@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
+  bin:
+    husky: lib/bin.js
+  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 
