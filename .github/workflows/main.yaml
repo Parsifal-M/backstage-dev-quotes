@@ -16,9 +16,6 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Set Yarn Version
-        run: yarn set version berry
-
       - name: Clean Yarn Cache
         run: yarn cache clean
 
