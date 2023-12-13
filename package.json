@@ -1,6 +1,6 @@
 {
   "name": "@parsifal-m/plugin-dev-quotes-homepage",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "node": "16 || 18",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -18,6 +18,10 @@
   },
   "backstage": {
     "role": "frontend-plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Parsifal-M/backstage-dev-quotes"
   },
   "sideEffects": false,
   "scripts": {

@@ -46,7 +46,15 @@ const overviewContent = (
 );
 ```
 
+## Example
+
+An example quote
+
 ![Quote Image](static/img/quote.png)
+
+An example quote on an entity page:
+
+![Quote Entity Page](static/img/quote2.png)
 
 ## Would you like to contribute? or add more quotes?
 
