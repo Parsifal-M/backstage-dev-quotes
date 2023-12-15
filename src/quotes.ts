@@ -353,4 +353,8 @@ export const quotes: Quotes = [
     text: 'The best error message is the one that never shows up.',
     author: 'Thomas Fuchs',
   },
+  {
+    text: 'A good programmer is someone who always looks both ways before crossing a one-way street.',
+    author: 'Doug Linder',
+  },
 ];
