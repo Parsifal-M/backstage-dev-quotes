@@ -58,7 +58,16 @@ An example quote on an entity page:
 
 ## Would you like to contribute? or add more quotes?
 
-Please do! I would love to see more quotes added to this plugin. If you would like to add some quotes, please open a pull request with your changes. If you would like to add a lot of quotes, please open an issue first so we can discuss it. And please keep them programming related, and keep it SFW.
+Please do! I would love to see more quotes added to this plugin. If you would like to add some quotes, please open a pull request with your changes. If you would like to add a lot of quotes, please open an issue first so we can discuss it. And please keep them programming related, and keep it safe for work! Here is a short example of how to add a quote:
+
+- Clone the repository and run `yarn install --immutable`
+- Add the quote to the `quotes.ts` file in the `src` folder.
+- Run `yarn prettier:write`
+- Make sure to sign your commit with `git commit -s -m "Added quote by <someone>"`
+
+## When will my quote be added to the plugin?
+
+I will try and release a new version with the new quotes as soon as possible. Keep in mind this is a side project I made for fun!
 
 ## License
 
