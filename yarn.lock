@@ -4014,7 +4014,7 @@ __metadata:
     lint-staged: "npm:^15.1.0"
     pinst: "npm:^3.0.0"
     prettier: "npm:3.1.0"
-    react: "npm:^17.0.0"
+    react: "npm:^18.2.0"
     react-dom: "npm:^17.0.0"
     react-router-dom: "npm:^6.16.0"
     typescript: "npm:~4.6.4"
@@ -15343,13 +15343,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.0":
-  version: 17.0.2
-  resolution: "react@npm:17.0.2"
+"react@npm:^18.2.0":
+  version: 18.2.0
+  resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: "npm:^1.1.0"
-    object-assign: "npm:^4.1.1"
-  checksum: 07ae8959acf1596f0550685102fd6097d461a54a4fd46a50f88a0cd7daaa97fdd6415de1dcb4bfe0da6aa43221a6746ce380410fa848acc60f8ac41f6649c148
+  checksum: b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
   languageName: node
   linkType: hard
 
