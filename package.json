@@ -1,6 +1,6 @@
 {
   "name": "@parsifal-m/plugin-dev-quotes-homepage",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "node": "16 || 18",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -9,7 +9,9 @@
   "keywords": [
     "backstage-plugin",
     "backstage",
-    "dev-quotes"
+    "dev-quotes",
+    "quotes",
+    "plugin"
   ],
   "publishConfig": {
     "access": "public",
@@ -40,15 +42,15 @@
     "postinstall": "husky install"
   },
   "dependencies": {
-    "@backstage/core-plugin-api": "^1.9.0",
+    "@backstage/core-plugin-api": "^1.9.1",
     "@material-ui/core": "^4.12.2"
   },
   "peerDependencies": {
     "react": "^16.13.1 || ^17.0.0"
   },
   "devDependencies": {
-    "@backstage/cli": "^0.25.2",
-    "@backstage/dev-utils": "^1.0.27",
+    "@backstage/cli": "^0.26.2",
+    "@backstage/dev-utils": "^1.0.30",
     "@spotify/prettier-config": "^15.0.0",
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^12.1.3",
