@@ -1,6 +1,6 @@
 {
   "name": "@parsifal-m/plugin-dev-quotes-homepage",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "node": "16 || 18",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -9,7 +9,9 @@
   "keywords": [
     "backstage-plugin",
     "backstage",
-    "dev-quotes"
+    "dev-quotes",
+    "quotes",
+    "plugin"
   ],
   "publishConfig": {
     "access": "public",
