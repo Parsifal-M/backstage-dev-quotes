@@ -2,7 +2,11 @@
 
 Hello! :wave:
 
-This is just a fun little plugin that I made to display some random coding/progamming related quotes on the Backstage homepage. Although to be honest the card can be used anywhere you like!
+This is just a fun little plugin that I made to display some random coding/programming related quotes on the Backstage homepage. Although to be honest the card can be used anywhere you like! I hope you enjoy it!
+
+If you want to leave a star, that would be awesome! :star:
+
+I don't expect much work to be done on this plugin as it was just a fun little project I made. But if you would like to contribute, please do! See [Would you like to contribute? or add more quotes?](#would-you-like-to-contribute-or-add-more-quotes) for more information.
 
 ## Pre-requisites (if you want to use it on the homepage)
 
