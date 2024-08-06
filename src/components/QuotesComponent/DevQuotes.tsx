@@ -1,6 +1,7 @@
 import { Typography, makeStyles } from '@material-ui/core';
 import React from 'react';
 import { quotes } from '../../quotes';
+import { Quotes } from '../../types';
 
 const useStyles = makeStyles(theme => ({
   footer: {
@@ -10,9 +11,15 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export const DevQuote = () => {
+export type DevQuoteOptions = {
+  extraQuotes?: Quotes;
+};
+
+export const DevQuote = (options: DevQuoteOptions) => {
+  const { extraQuotes } = options;
+  const allQuotes = [...quotes, ...(extraQuotes ?? [])];
   const classes = useStyles();
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const randomQuote = allQuotes[Math.floor(Math.random() * allQuotes.length)];
 
   return (
     <footer className={classes.footer}>
