@@ -1,5 +1,4 @@
 import { Typography, makeStyles } from '@material-ui/core';
-import React from 'react';
 import { quotes } from '../../quotes';
 import { Quotes } from '../../types';
 
