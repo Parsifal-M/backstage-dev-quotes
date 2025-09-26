@@ -15,7 +15,7 @@ If you do want to use it on the homepage, first make sure you look over the offi
 ## Installation
 
 ```bash
-yarn add --cwd packages/app @parsifal-m/plugin-dev-quotes-homepage
+yarn --cwd packages/app add @parsifal-m/plugin-dev-quotes-homepage
 ```
 
 Then all you need to do is import the card as below, anywhere you like!
