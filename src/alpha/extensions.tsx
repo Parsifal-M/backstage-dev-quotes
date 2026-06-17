@@ -1,12 +1,13 @@
-import { EntityCardBlueprint } from '@backstage/plugin-catalog-react/alpha';
-import { compatWrapper } from '@backstage/core-compat-api';
+import { PageBlueprint } from '@backstage/frontend-plugin-api';
+import { rootRouteRef } from '../routes';
 
-export const devQuotesCard = EntityCardBlueprint.make({
-  name: 'dev-quotes-card',
+export const devQuotesPage = PageBlueprint.make({
   params: {
+    path: '/dev-quotes',
+    routeRef: rootRouteRef,
     loader: async () =>
-      import('../components/DevQuotesComponent/DevQuotes').then(m =>
-        compatWrapper(<m.DevQuote />),
-      ),
+      import('../components/DevQuotesComponent/DevQuotes').then(m => (
+        <m.DevQuote />
+      )),
   },
 });

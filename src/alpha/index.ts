@@ -1,3 +1,2 @@
-import { devQuotePlugin } from './plugin';
-
-export default devQuotePlugin;
+export { devQuotesPage } from './extensions';
+export { devQuotePlugin as default } from './plugin';
