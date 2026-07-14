@@ -13,17 +13,6 @@
     "quotes",
     "plugin"
   ],
-  "exports": {
-    ".": "./src/index.ts",
-    "./package.json": "./package.json"
-  },
-  "typesVersions": {
-    "*": {
-      "package.json": [
-        "package.json"
-      ]
-    }
-  },
   "publishConfig": {
     "access": "public",
     "main": "dist/index.esm.js",
