@@ -1,5 +1,3 @@
-import { createRouteRef } from '@backstage/core-plugin-api';
+import { createRouteRef } from '@backstage/frontend-plugin-api';
 
-export const rootRouteRef = createRouteRef({
-  id: 'dev-quotes-homepage',
-});
+export const rootRouteRef = createRouteRef();

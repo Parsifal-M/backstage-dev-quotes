@@ -8,6 +8,8 @@ If you want to leave a star, that would be awesome! :star:
 
 I don't expect much work to be done on this plugin as it was just a fun little project I made. But if you would like to contribute, please do! See [Would you like to contribute? or add more quotes?](#would-you-like-to-contribute-or-add-more-quotes) for more information.
 
+> **From v4.0.0 onwards, this plugin only supports the Backstage New Frontend System (NFS).** The legacy frontend system (`createApp` from `@backstage/app-defaults`) is no longer supported. If you are on an older app setup, stay on v3.x or migrate your app first using the [Backstage frontend system migration guide](https://backstage.io/docs/frontend-system/building-apps/migrating). See the [CHANGELOG](./CHANGELOG.md) for full details and migration steps.
+
 ## Pre-requisites (if you want to use it on the homepage)
 
 If you do want to use it on the homepage, first make sure you look over the official docs on how to configure the homepage [here](https://backstage.io/docs/getting-started/homepage/#composing-your-homepage). There is also the [homepage plugin](https://github.com/backstage/backstage/tree/master/plugins/home#readme) which might be better to read first.

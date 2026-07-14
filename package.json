@@ -1,6 +1,6 @@
 {
   "name": "@parsifal-m/plugin-dev-quotes-homepage",
-  "version": "3.0.8",
+  "version": "4.0.0",
   "node": "16 || 18",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -15,14 +15,10 @@
   ],
   "exports": {
     ".": "./src/index.ts",
-    "./alpha": "./src/alpha/index.ts",
     "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
-      "alpha": [
-        "src/alpha/index.ts"
-      ],
       "package.json": [
         "package.json"
       ]
@@ -63,10 +59,7 @@
     "fix": "backstage-cli repo fix --publish"
   },
   "dependencies": {
-    "@backstage/core-compat-api": "^0.5.12",
-    "@backstage/core-plugin-api": "^1.12.7",
     "@backstage/frontend-plugin-api": "^0.17.2",
-    "@backstage/plugin-catalog-react": "^3.1.0",
     "@material-ui/core": "^4.12.2",
     "react-router-dom": "^6.3.0"
   },
