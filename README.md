@@ -20,36 +20,58 @@ If you do want to use it on the homepage, first make sure you look over the offi
 yarn --cwd packages/app add @parsifal-m/plugin-dev-quotes-homepage
 ```
 
-Then all you need to do is import the card as below, anywhere you like!
+## New Frontend System (NFS) Setup
+
+### Standalone page
+
+The plugin ships with a built-in page extension that renders the quote card at `/dev-quotes`. Add the plugin to your app's `features` array in `packages/app/src/App.tsx`:
+
+```tsx
+import { createApp } from '@backstage/frontend-defaults';
+import devQuotePlugin from '@parsifal-m/plugin-dev-quotes-homepage';
+
+const app = createApp({
+  features: [
+    devQuotePlugin,
+    // ... other features
+  ],
+});
+
+export default app.createRoot();
+```
+
+Once added, the quote card will be available at `http://localhost:3000/dev-quotes`.
+
+### Adding to a custom page or homepage
+
+If you'd rather embed the quote card within an existing page (such as your Backstage homepage), import the `DevQuote` component directly and drop it into your page extension or custom page component:
 
 ```tsx
 import { DevQuote } from '@parsifal-m/plugin-dev-quotes-homepage';
 
-const overviewContent = (
-  <Grid container spacing={3} alignItems="stretch">
-    {entityWarningContent}
-    <Grid item md={6}>
-      <EntityAboutCard variant="gridItem" />
-    </Grid>
-    <Grid item md={6} xs={12}>
-      <EntityCatalogGraphCard variant="gridItem" height={400} />
-    </Grid>
-    <Grid item md={4} xs={12}>
+const MyHomePage = () => (
+  <Grid container spacing={3}>
+    <Grid item md={12}>
       <DevQuote />
     </Grid>
-
-    <Grid item md={6} xs={12}>
-      <OpaMetadataAnalysisCard />
-    </Grid>
-
-    <Grid item md={4} xs={12}>
-      <EntityLinksCard />
-    </Grid>
-    <Grid item md={8} xs={12}>
-      <EntityHasSubcomponentsCard variant="gridItem" />
-    </Grid>
+    {/* ... other cards */}
   </Grid>
 );
+```
+
+### Adding custom quotes
+
+Pass additional quotes via the `extraQuotes` prop. Each entry needs a `text` and `author` field — they are merged with the built-in quote list at runtime:
+
+```tsx
+import { DevQuote } from '@parsifal-m/plugin-dev-quotes-homepage';
+
+<DevQuote
+  extraQuotes={[
+    { text: 'Ship it!', author: 'Every engineer ever' },
+    { text: 'Make it work, make it right, make it fast.', author: 'Kent Beck' },
+  ]}
+/>;
 ```
 
 ## Example
