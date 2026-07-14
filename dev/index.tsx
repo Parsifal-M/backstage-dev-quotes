@@ -1,20 +1,11 @@
-import { createDevApp } from '@backstage/dev-utils';
-import { devQuotesHomepage, DevQuotesHomepage } from '../src/plugin';
+import ReactDOM from 'react-dom/client';
+import { createApp } from '@backstage/frontend-defaults';
+import devQuotePlugin from '../src/plugin';
 
-createDevApp()
-  .registerPlugin(devQuotesHomepage)
-  .addPage({
-    element: (
-      <DevQuotesHomepage
-        extraQuotes={[
-          {
-            author: 'dev-quotes developer',
-            text: 'This is a custom quote, do not mind me',
-          },
-        ]}
-      />
-    ),
-    title: 'Root Page',
-    path: '/dev-quotes-homepage',
-  })
-  .render();
+export const app = createApp({
+  features: [devQuotePlugin],
+});
+
+const root = app.createRoot();
+
+ReactDOM.createRoot(document.getElementById('root')!).render(root);

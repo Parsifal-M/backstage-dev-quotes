@@ -1,2 +1,3 @@
-export * from './components/QuotesComponent';
+export { default } from './plugin';
+export * from './components/DevQuotesComponent';
 export * from './types';

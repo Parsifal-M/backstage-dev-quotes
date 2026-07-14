@@ -1,9 +1,9 @@
 app:
-  title: Brewed-Backstage
+  title: Dev-Quotes
   baseUrl: http://localhost:3000
 
 organization:
-  name: Brewed-Backstage
+  name: Dev-Quotes
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -64,10 +64,3 @@ auth:
       development:
         clientId: ${GITHUB_CLIENT_ID}
         clientSecret: ${GITHUB_CLIENT_SECRET}
-
-catalog:
-  import:
-    entityFilename: catalog-info.yaml
-    pullRequestBranchName: backstage-integration
-  rules:
-    - allow: [Component, System, API, Resource, Location]

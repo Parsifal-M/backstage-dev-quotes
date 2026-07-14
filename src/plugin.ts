@@ -1,21 +1,13 @@
-import {
-  createPlugin,
-  createRoutableExtension,
-} from '@backstage/core-plugin-api';
+import { createFrontendPlugin } from '@backstage/frontend-plugin-api';
 import { rootRouteRef } from './routes';
+import { devQuotesPage } from './extensions';
 
-export const devQuotesHomepage = createPlugin({
-  id: 'dev-quotes-homepage',
+const devQuotePlugin = createFrontendPlugin({
+  pluginId: 'dev-quotes',
+  extensions: [devQuotesPage],
   routes: {
     root: rootRouteRef,
   },
 });
 
-export const DevQuotesHomepage = devQuotesHomepage.provide(
-  createRoutableExtension({
-    name: 'DevQuotesHomepage',
-    component: () =>
-      import('./components/QuotesComponent').then(m => m.DevQuote),
-    mountPoint: rootRouteRef,
-  }),
-);
+export default devQuotePlugin;
