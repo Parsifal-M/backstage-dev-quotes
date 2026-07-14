@@ -2,7 +2,7 @@
 
 Hello! :wave:
 
-This is just a fun little plugin that I made to display some random coding/programming related quotes on the Backstage homepage. Although to be honest the card can be used anywhere you like! I hope you enjoy it!
+This is just a fun little plugin that I made to display random coding/programming quotes anywhere in your Backstage app — homepage, entity pages, custom dashboards, whatever you like. I hope you enjoy it!
 
 If you want to leave a star, that would be awesome! :star:
 
@@ -10,41 +10,15 @@ I don't expect much work to be done on this plugin as it was just a fun little p
 
 > **From v4.0.0 onwards, this plugin only supports the Backstage New Frontend System (NFS).** The legacy frontend system (`createApp` from `@backstage/app-defaults`) is no longer supported. If you are on an older app setup, stay on v3.x or migrate your app first using the [Backstage frontend system migration guide](https://backstage.io/docs/frontend-system/building-apps/migrating). See the [CHANGELOG](./CHANGELOG.md) for full details and migration steps.
 
-## Pre-requisites (if you want to use it on the homepage)
-
-If you do want to use it on the homepage, first make sure you look over the official docs on how to configure the homepage [here](https://backstage.io/docs/getting-started/homepage/#composing-your-homepage). There is also the [homepage plugin](https://github.com/backstage/backstage/tree/master/plugins/home#readme) which might be better to read first.
-
 ## Installation
 
 ```bash
 yarn --cwd packages/app add @parsifal-m/plugin-dev-quotes-homepage
 ```
 
-## New Frontend System (NFS) Setup
+## Usage
 
-### Standalone page
-
-The plugin ships with a built-in page extension that renders the quote card at `/dev-quotes`. Add the plugin to your app's `features` array in `packages/app/src/App.tsx`:
-
-```tsx
-import { createApp } from '@backstage/frontend-defaults';
-import devQuotePlugin from '@parsifal-m/plugin-dev-quotes-homepage';
-
-const app = createApp({
-  features: [
-    devQuotePlugin,
-    // ... other features
-  ],
-});
-
-export default app.createRoot();
-```
-
-Once added, the quote card will be available at `http://localhost:3000/dev-quotes`.
-
-### Adding to a custom page or homepage
-
-If you'd rather embed the quote card within an existing page (such as your Backstage homepage), import the `DevQuote` component directly and drop it into your page extension or custom page component:
+The primary way to use this plugin is by importing the `DevQuote` component directly into any page — your homepage, an entity page, a custom dashboard, wherever you like:
 
 ```tsx
 import { Grid } from '@material-ui/core';
@@ -52,8 +26,7 @@ import { DevQuote } from '@parsifal-m/plugin-dev-quotes-homepage';
 
 const MyHomePage = () => (
   <Grid container spacing={3}>
-      <DevQuote />
-    </Grid>
+    <DevQuote />
     {/* ... other cards */}
   </Grid>
 );
