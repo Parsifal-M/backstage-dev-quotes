@@ -47,11 +47,11 @@ Once added, the quote card will be available at `http://localhost:3000/dev-quote
 If you'd rather embed the quote card within an existing page (such as your Backstage homepage), import the `DevQuote` component directly and drop it into your page extension or custom page component:
 
 ```tsx
+import { Grid } from '@material-ui/core';
 import { DevQuote } from '@parsifal-m/plugin-dev-quotes-homepage';
 
 const MyHomePage = () => (
   <Grid container spacing={3}>
-    <Grid item md={12}>
       <DevQuote />
     </Grid>
     {/* ... other cards */}
