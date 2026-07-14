@@ -3939,13 +3939,10 @@ __metadata:
   resolution: "@parsifal-m/plugin-dev-quotes-homepage@workspace:."
   dependencies:
     "@backstage/cli": "npm:^0.36.3"
-    "@backstage/core-compat-api": "npm:^0.5.12"
-    "@backstage/core-plugin-api": "npm:^1.12.7"
     "@backstage/dev-utils": "npm:^1.1.24"
     "@backstage/frontend-defaults": "npm:^0.5.3"
     "@backstage/frontend-plugin-api": "npm:^0.17.2"
     "@backstage/plugin-catalog": "npm:^2.0.6"
-    "@backstage/plugin-catalog-react": "npm:^3.1.0"
     "@material-ui/core": "npm:^4.12.2"
     "@spotify/prettier-config": "npm:^15.0.0"
     "@testing-library/dom": "npm:^10.0.0"
